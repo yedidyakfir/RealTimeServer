@@ -2,16 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996521d3-22fb-47ec-a16a-689bd5151283" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BusServerPkg/BusDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BusServerPkg/BusDialogWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BusServerPkg/BusServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MessageManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StationServerPkg/StationDialogWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StationServerPkg/StationServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UseStationServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bus/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bus/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bus/Bus.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bus/src/BusClientWin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Center/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Center/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Center/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Center/Center.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StationClientWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bus/src/BusClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bus/src/BusClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusDialogWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialogWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/MessageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationDialogWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialogWin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UseStationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/UseStationServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,20 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BusDialogWin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BusServerPkg/BusDialogWin.java">
+      <file leaf-file-name="StationClient.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StationClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="155" column="9" selection-start-line="155" selection-start-column="9" selection-end-line="155" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StationDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StationServerPkg/StationDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="225">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,14 +46,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MessageManager.java">
+      <file leaf-file-name="StationClientWin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StationClientWin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            <state relative-caret-position="475">
+              <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
               <folding>
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,6 +85,8 @@
         <option value="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" />
         <option value="$PROJECT_DIR$/src/StationServerPkg/StationDialogWin.java" />
         <option value="$PROJECT_DIR$/src/MessageManager.java" />
+        <option value="$PROJECT_DIR$/src/StationClientWin.java" />
+        <option value="$PROJECT_DIR$/src/StationClient.java" />
       </list>
     </option>
   </component>
@@ -111,18 +114,6 @@
               <item name="Station" type="b2602c69:ProjectViewProjectNode" />
               <item name="Station" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Station" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Station" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="BusServerPkg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Station" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Station" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="StationServerPkg" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528967197470</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="created all classes for server">
+      <created>1528971176739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1528971176739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -245,7 +243,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="meushar your'e dumb&#10;why didn'y you do as I said???" />
-    <option name="LAST_COMMIT_MESSAGE" value="meushar your'e dumb&#10;why didn'y you do as I said???" />
+    <MESSAGE value="created all classes for server" />
+    <option name="LAST_COMMIT_MESSAGE" value="created all classes for server" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DialogWin.java">
@@ -326,10 +325,30 @@
     <entry file="file://$PROJECT_DIR$/src/MessageManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
           <folding>
             <element signature="e#181#182#0" expanded="true" />
             <element signature="e#223#224#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StationClientWin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StationClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

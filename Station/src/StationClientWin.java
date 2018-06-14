@@ -1,36 +1,10 @@
-package BusServerPkg;
+import javax.swing.*;
+import javax.swing.text.*;
+import java.awt.*;
+import java.awt.event.*;
 
-//File name DialogWin770.java
-//Iyar 5770
-//Levian Yehonatan
-import java.awt.BorderLayout;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-
-import javax.swing.BoxLayout;
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JScrollPane;
-import javax.swing.JTextArea;
-import javax.swing.JTextPane;
-import javax.swing.KeyStroke;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.Style;
-import javax.swing.text.StyleConstants;
-import javax.swing.text.StyleContext;
-import javax.swing.text.StyledDocument;
-
-public class BusDialogWin extends JFrame implements ActionListener,WindowListener,KeyListener
+public class StationClientWin extends JFrame implements ActionListener,KeyListener
 {
-
-    private static int num = 0;
     private JTextPane paneTextUp;
     private StyledDocument doc;
     private JTextArea textAreaDown;
@@ -38,18 +12,17 @@ public class BusDialogWin extends JFrame implements ActionListener,WindowListene
             getStyle(StyleContext.DEFAULT_STYLE);
     private Style myStyle, otherStyle;
     private Style myHeaderStyle, otherHeaderStyle;
-    private BusDialog myDialog;
     public JButton send;
     private String myName = "Your";
-    private String otherName = "Client";
+    private String otherName = "Server (Dialog)";
+    private StationClient myClient;
 
-    public BusDialogWin(String header, BusDialog myDialog)
+    public StationClientWin(String header, StationClient myClient)
     {
         super(header);
-        this.myDialog = myDialog;
-        addWindowListener(this);
-        setLocation((num % 3) * 335 + 5, (num / 3) * 230 + 50);
-        num++;
+        this.myClient = myClient;
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setLocation(350,350);
 
         paneTextUp = new JTextPane();
         paneTextUp.setEditable(false);
@@ -125,62 +98,35 @@ public class BusDialogWin extends JFrame implements ActionListener,WindowListene
     {
         if (((JButton) arg0.getSource()).getText().equals("Close"))
         {
-            this.dispose();
+            System.exit(1);
         }
         printMe(textAreaDown.getText());
-        myDialog.bufferSocketOut.println(textAreaDown.getText());
+        myClient.bufferSocketOut.println(textAreaDown.getText());
         textAreaDown.setText("");
     }
 
-    public void windowOpened(WindowEvent e)
-    {
-    }
-
-    public void windowClosing(WindowEvent e)
-    {
-        myDialog.exit();
-    }
-
-    public void windowClosed(WindowEvent e)
-    {
-    }
-
-    public void windowIconified(WindowEvent e)
-    {
-    }
-
-    public void windowDeiconified(WindowEvent e)
-    {
-    }
-
-    public void windowActivated(WindowEvent e)
-    {
-    }
-
-    public void windowDeactivated(WindowEvent e)
-    {
-    }
-
+    @Override
     public void keyPressed(KeyEvent arg0)
     {
         if( arg0.getKeyCode() == KeyEvent.VK_ENTER )
         {
             printMe(textAreaDown.getText());
-            myDialog.bufferSocketOut.println(textAreaDown.getText());
+            myClient.bufferSocketOut.println(textAreaDown.getText());
             textAreaDown.setText("");
         }
     }
 
+    @Override
     public void keyReleased(KeyEvent arg0)
     {
         // TODO Auto-generated method stub
 
     }
 
+    @Override
     public void keyTyped(KeyEvent arg0)
     {
         // TODO Auto-generated method stub
 
     }
-
 }

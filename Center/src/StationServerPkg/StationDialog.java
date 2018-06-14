@@ -1,23 +1,17 @@
-package BusServerPkg;
+package StationServerPkg;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
+import java.io.*;
 import java.net.Socket;
 
-class BusDialog extends Thread // parallel dialogs on the same socket
+public class StationDialog extends Thread
 {
-
     Socket client;
-    BusServer myServer;
+    StationServer myServer;
     BufferedReader bufferSocketIn;
     PrintWriter bufferSocketOut;
-    BusDialogWin myOutput;
+    StationDialogWin myOutput;
 
-    public BusDialog(Socket clientSocket, BusServer myServer)
+    public StationDialog(Socket clientSocket, StationServer myServer)
     {
         client = clientSocket;
         this.myServer = myServer;
@@ -37,7 +31,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
             System.err.println("server:Exception when opening sockets: " + e);
             return;
         }
-        myOutput = new BusDialogWin("Dialog Win for: " + client.toString(), this);
+        myOutput = new StationDialogWin("Dialog Win for: " + client.toString(), this);
         start();
     }
 

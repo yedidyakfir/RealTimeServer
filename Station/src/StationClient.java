@@ -1,17 +1,18 @@
 import java.io.*;
-import java.net.*;
+import java.net.Socket;
 
-
-public class BusClient
+public class StationClient
 {
     String SERVERHOST = "LOCALHOST";
+//    String SERVERHOST = "";
+//    String SERVERHOST = "147.161.23.20";
 
-    int DEFAULT_PORT = 50000;
+    int DEFAULT_PORT = 60000;
     Socket clientSocket = null;
     BufferedReader bufferSocketIn;
     PrintWriter bufferSocketOut;
     BufferedReader keyBoard;
-    BusClientWin myOutput;
+    StationClientWin myOutput;
     String line;
 
     public void doit()
@@ -36,7 +37,7 @@ public class BusClient
 //	   new InputStreamReader(System.in));
 
 
-            myOutput = new BusClientWin("Client  ", this);
+            myOutput = new StationClientWin("Client  ", this);
 
             // notice about the connection
             myOutput.printMe("Connected to " + clientSocket.getInetAddress() +
@@ -79,7 +80,7 @@ public class BusClient
 
     public static void main(String[] args)
     {
-        BusClient client = new BusClient();
+        StationClient client = new StationClient();
         client.doit();
     }
 }
