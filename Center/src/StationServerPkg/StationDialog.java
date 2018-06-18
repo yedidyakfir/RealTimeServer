@@ -3,6 +3,9 @@ package StationServerPkg;
 import java.io.*;
 import java.net.Socket;
 
+import Other.Event64;
+import Other.MessageManager;
+
 public class StationDialog extends Thread
 {
     Socket client;
@@ -10,9 +13,13 @@ public class StationDialog extends Thread
     BufferedReader bufferSocketIn;
     PrintWriter bufferSocketOut;
     StationDialogWin myOutput;
+    MessageManager messageManager;
+    Event64 busArrivedEv;
 
-    public StationDialog(Socket clientSocket, StationServer myServer)
+    public StationDialog(Socket clientSocket, StationServer myServer, MessageManager messageManager)
     {
+        this.busArrivedEv = new Event64();
+        this.messageManager = messageManager;
         client = clientSocket;
         this.myServer = myServer;
         try
@@ -41,14 +48,12 @@ public class StationDialog extends Thread
         boolean stop=false;
         try
         {
+            line = bufferSocketIn.readLine();
+            messageManager.AddStation(line,this.busArrivedEv);
+            myOutput.printOther(line);
             while (true)
             {
-                line = bufferSocketIn.readLine();
-                if (line == null)
-                    break;
-                if (line.equals("end"))
-                    break;
-                myOutput.printOther(line);
+                bufferSocketOut.println((String)this.busArrivedEv.waitEvent());
             }
         } catch (IOException e)
         {

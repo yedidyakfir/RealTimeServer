@@ -2,6 +2,7 @@ package BusServerPkg;
 
 import java.io.*;
 import java.net.Socket;
+import Other.MessageManager;
 
 class BusDialog extends Thread // parallel dialogs on the same socket
 {
@@ -11,9 +12,11 @@ class BusDialog extends Thread // parallel dialogs on the same socket
     BufferedReader bufferSocketIn;
     PrintWriter bufferSocketOut;
     BusDialogWin myOutput;
+    MessageManager message;
 
-    public BusDialog(Socket clientSocket, BusServer myServer)
+    public BusDialog(Socket clientSocket, BusServer myServer, MessageManager m)
     {
+        message = m;
         client = clientSocket;
         this.myServer = myServer;
         try
@@ -38,18 +41,23 @@ class BusDialog extends Thread // parallel dialogs on the same socket
 
     public void run()
     {
-        String line;
+        int line;
+        String station;
         boolean stop=false;
         try
         {
+            line = Integer.parseInt(bufferSocketIn.readLine());
+            bufferSocketOut.println(this.message.BusStratDrive(line));
+
             while (true)
             {
-                line = bufferSocketIn.readLine();
-                if (line == null)
+                station = bufferSocketIn.readLine();
+                if (station == null)
                     break;
-                if (line.equals("end"))
+                if (station.equals("end"))
                     break;
-                myOutput.printOther(line);
+                myOutput.printOther(station);
+                this.message.BusArrivedAt(line,station);
             }
         } catch (IOException e)
         {

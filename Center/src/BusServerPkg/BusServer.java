@@ -1,5 +1,7 @@
 package BusServerPkg;
 
+import Other.MessageManager;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -9,9 +11,11 @@ public class BusServer extends Thread
     int DEFAULT_PORT = 50000;
     ServerSocket listenSocket;
     Socket clientSockets;
+    MessageManager messageManager;
 
-    public BusServer()
+    public BusServer(MessageManager messageManager)
     {
+        this.messageManager = messageManager;
         try
         {
             listenSocket = new ServerSocket(DEFAULT_PORT);
@@ -34,7 +38,7 @@ public class BusServer extends Thread
             while (true)
             {
                 clientSockets = listenSocket.accept();
-                new BusDialog(clientSockets, this);
+                new BusDialog(clientSockets, this,messageManager);
             }
         }
         catch (IOException ex)

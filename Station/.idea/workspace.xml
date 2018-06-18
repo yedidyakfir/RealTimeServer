@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996521d3-22fb-47ec-a16a-689bd5151283" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../Bus/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bus/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bus/Bus.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Bus/src/BusClientWin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Center/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Center/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Center/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Center/Center.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/StationClientWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Bus/src/BusClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bus/src/BusClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusDialogWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialogWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/MessageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationDialogWin.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialogWin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UseStationServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Center/src/UseStationServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -203,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528971176739</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="created all project">
+      <created>1528975197533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528975197533</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -244,7 +231,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="meushar your'e dumb&#10;why didn'y you do as I said???" />
     <MESSAGE value="created all classes for server" />
-    <option name="LAST_COMMIT_MESSAGE" value="created all classes for server" />
+    <MESSAGE value="created all project" />
+    <option name="LAST_COMMIT_MESSAGE" value="created all project" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/DialogWin.java">

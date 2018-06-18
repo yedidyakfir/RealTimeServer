@@ -41,6 +41,10 @@ public class BusClient
             // notice about the connection
             myOutput.printMe("Connected to " + clientSocket.getInetAddress() +
                     ":" + clientSocket.getPort());
+
+            //send line number
+            bufferSocketOut.println(line);
+
             while (true)
             {
                 line = bufferSocketIn.readLine(); // reads a line from the server
