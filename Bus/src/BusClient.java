@@ -15,6 +15,11 @@ public class BusClient
     String line = "5";
     String[] stations;
 
+    public BusClient(String line)
+    {
+        this.line = line;
+    }
+
     public void doit()
     {
         try
@@ -97,7 +102,7 @@ public class BusClient
 
     public static void main(String[] args)
     {
-        BusClient client = new BusClient();
+        BusClient client = new BusClient("5");
         client.doit();
     }
 }

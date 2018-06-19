@@ -4,9 +4,6 @@
     <list default="true" id="6a6c3003-0c71-48eb-988b-70d1ee1e5b0e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Bus/src/BusClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bus/src/BusClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BusServerPkg/BusDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BusServerPkg/BusDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Other/MessageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Other/MessageManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
