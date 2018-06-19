@@ -13,7 +13,16 @@ public class StationClient
     PrintWriter bufferSocketOut;
     BufferedReader keyBoard;
     StationClientWin myOutput;
+    String station;
     String line;
+    String[] stations = new String[] {"A","B","C","D"};
+    static int s = 0;
+
+    public StationClient()
+    {
+        this.station = stations[s];
+        s++;
+    }
 
     public void doit()
     {
@@ -44,6 +53,7 @@ public class StationClient
                     ":" + clientSocket.getPort());
             while (true)
             {
+                myOutput.printMe(this.station);
                 line = bufferSocketIn.readLine(); // reads a line from the server
                 if (line == null)  // connection is closed ?  exit
                 {

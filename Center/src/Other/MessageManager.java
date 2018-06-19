@@ -39,6 +39,7 @@ public class MessageManager
     {
         if(!stationsAlert.containsKey(station))
             return;
+
         stationsAlert.get(station).sendEvent(line);
     }
 
