@@ -12,7 +12,9 @@ class BusDialog extends Thread // parallel dialogs on the same socket
     BufferedReader bufferSocketIn;
     PrintWriter bufferSocketOut;
     BusDialogWin myOutput;
-    MessageManager message;
+    MessageManager manager;
+    String stations;
+    int lineNumber;
 
     public BusDialog(Socket clientSocket, BusServer myServer, MessageManager m)
     {
@@ -46,8 +48,16 @@ class BusDialog extends Thread // parallel dialogs on the same socket
         boolean stop=false;
         try
         {
-            line = Integer.parseInt(bufferSocketIn.readLine());
-            bufferSocketOut.println(this.message.BusStratDrive(line));
+            line = bufferSocketIn.readLine(); //get line number
+            lineNumber = Integer.parseInt(line);
+            myOutput.printOther("Bus Line: " + lineNumber);
+            myOutput.setTitle("Server: Bus " + line);
+            stations = manager.BusStartDrive(lineNumber);
+            myOutput.printMe("Route: " + stations);
+            //Send the stations to the bus
+            bufferSocketOut.println(stations);
+            //bufferSocketOut.println(this.message.BusStratDrive(line));
+
 
             while (true)
             {
@@ -57,7 +67,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
                 if (station.equals("end"))
                     break;
                 myOutput.printOther(station);
-                this.message.BusArrivedAt(line,station);
+                this.manager.BusArrivedAt(lineNumber,station);
             }
         } catch (IOException e)
         {

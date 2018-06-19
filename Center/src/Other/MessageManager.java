@@ -14,9 +14,21 @@ public class MessageManager
         stationsAlert.put(station,ev);
     }
 
-    public String[] BusStratDrive(int line)
+    public String[] BusStartDrive(int lineNumber)
     {
-        return StationInLine.get(line);
+        try
+        {
+            if(!StationInLine.containsKey(lineNumber))
+                throw new Exception("Line does not exist");
+            else
+            {
+                return StationInLine.get(lineNumber);
+            }
+        }
+        catch (Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
     }
 
     public void BusArrivedAt(int line,String station)
