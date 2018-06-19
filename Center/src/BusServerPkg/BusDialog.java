@@ -13,7 +13,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
     PrintWriter bufferSocketOut;
     BusDialogWin myOutput;
     MessageManager manager;
-    String stations;
+    String[] stations;
     int lineNumber;
 
     public BusDialog(Socket clientSocket, BusServer myServer, MessageManager m)

@@ -13,6 +13,8 @@ public class BusClient
     BufferedReader keyBoard;
     BusClientWin myOutput;
     String line;
+    int lineNumber;
+    String[] stations;
 
     public void doit()
     {
@@ -48,15 +50,22 @@ public class BusClient
             while (true)
             {
                 line = bufferSocketIn.readLine(); // reads a line from the server
-                if (line == null)  // connection is closed ?  exit
+                stations = line.split(" "); //reads the stations from the server
+                if (stations == null)  // connection is closed ?  exit
                 {
                     myOutput.printMe("Connection closed by the Server.");
                     break;
                 }
-                myOutput.printOther(line); // shows it on the screen
+                myOutput.printOther(stations); // shows it on the screen
                 if (line.equals("end"))
                 {
                     break;
+                }
+                for (String station : stations) //Bus Runs Through stations
+                {
+                    Thread.sleep(1000); //simulates a driving bus
+                    bufferSocketOut.println(" " + lineNumber + " " + station );
+                    myOutput.printMe("Got to station " + station)
                 }
             }
         } catch (IOException e)
