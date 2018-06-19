@@ -18,7 +18,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
 
     public BusDialog(Socket clientSocket, BusServer myServer, MessageManager m)
     {
-        message = m;
+        manager = m;
         client = clientSocket;
         this.myServer = myServer;
         try
@@ -43,7 +43,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
 
     public void run()
     {
-        int line;
+        String line;
         String station;
         boolean stop=false;
         try
@@ -69,9 +69,8 @@ class BusDialog extends Thread // parallel dialogs on the same socket
                 myOutput.printOther(station);
                 this.manager.BusArrivedAt(lineNumber,station);
             }
-        } catch (IOException e)
-        {
-        } finally
+        } catch (IOException e) {}
+        finally
         {
             try
             {

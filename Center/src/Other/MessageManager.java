@@ -14,25 +14,26 @@ public class MessageManager
         stationsAlert.put(station,ev);
     }
 
-    public String[] BusStartDrive(int lineNumber)
+    public String BusStartDrive(int lineNumber)
     {
-        try
+        String ret = "";
+        if(!StationInLine.containsKey(lineNumber))
+            System.out.println("Line does not exist");
+        else
         {
-            if(!StationInLine.containsKey(lineNumber))
-                throw new Exception("Line does not exist");
-            else
+            String[] stations = StationInLine.get(lineNumber);
+            for(String station: stations)
             {
-                return StationInLine.get(lineNumber);
+                ret += station + " ";
             }
         }
-        catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
+        return ret;
     }
 
     public void BusArrivedAt(int line,String station)
     {
+        if(!stationsAlert.containsKey(station))
+            return;
         stationsAlert.get(station).sendEvent(line);
     }
 
