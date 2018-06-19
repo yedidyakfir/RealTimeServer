@@ -1,13 +1,18 @@
 package Other;
 
-import org.w3c.dom.events.Event;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class MessageManager
 {
-    private  Map<String,Event64> stationsAlert;
-    private Map<Integer,String[]> StationInLine; //what station in the line x
+    private  Map<String,Event64> stationsAlert = new HashMap<>();
+    private Map<Integer,String[]> StationInLine = new HashMap<>(); //what station in the line x
+
+    public MessageManager()
+    {
+        StationInLine.put(5,new String[] {"yes","david","roee"});
+    }
 
     public void AddStation(String station, Event64 ev)
     {

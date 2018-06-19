@@ -12,8 +12,7 @@ public class BusClient
     PrintWriter bufferSocketOut;
     BufferedReader keyBoard;
     BusClientWin myOutput;
-    String line;
-    int lineNumber;
+    String line = "5";
     String[] stations;
 
     public void doit()
@@ -49,30 +48,36 @@ public class BusClient
 
             while (true)
             {
-                line = bufferSocketIn.readLine(); // reads a line from the server
-                stations = line.split(" "); //reads the stations from the server
+                String temp = bufferSocketIn.readLine(); // reads a line from the server
+                stations = temp.split(" "); //reads the stations from the server
                 if (stations == null)  // connection is closed ?  exit
                 {
                     myOutput.printMe("Connection closed by the Server.");
                     break;
                 }
-                myOutput.printOther(stations); // shows it on the screen
+                myOutput.printOther(stations.toString()); // shows it on the screen
                 if (line.equals("end"))
                 {
                     break;
                 }
                 for (String station : stations) //Bus Runs Through stations
                 {
-                    Thread.sleep(1000); //simulates a driving bus
-                    bufferSocketOut.println(" " + lineNumber + " " + station );
-                    myOutput.printMe("Got to station " + station)
+                    Thread.sleep(5000); //simulates a driving bus
+                    bufferSocketOut.println(" " + line + " " + station );
+                    myOutput.printMe("Got to station " + station);
                 }
             }
         } catch (IOException e)
         {
             myOutput.printMe(e.toString());
             System.err.println(e);
-        } finally
+        }
+        catch (InterruptedException e)
+        {
+            myOutput.printMe(e.toString());
+            System.err.println(e);
+        }
+        finally
         {
             try
             {
