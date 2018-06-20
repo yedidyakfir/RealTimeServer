@@ -48,11 +48,21 @@ public class StationDialog extends Thread
         boolean stop=false;
         try
         {
-            line = bufferSocketIn.readLine();
+            line = bufferSocketIn.readLine(); //Gets the station
+            System.out.println("StationDialog, station " + line);
+            busArrivedEv = new Event64();
             messageManager.AddStation(line,this.busArrivedEv);
             myOutput.printOther(line);
             while (true)
             {
+                if(busArrivedEv.arrivedEvent())
+                {
+                    line = String.valueOf(busArrivedEv.waitEvent());
+                    bufferSocketOut.println(line);
+                    myOutput.printMe(line);
+                    if("end".equals(line))
+                        break;;
+                }
                 bufferSocketOut.println((String)this.busArrivedEv.waitEvent());
             }
         } catch (IOException e)

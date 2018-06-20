@@ -14,8 +14,9 @@ public class StationClient
     PrintWriter bufferSocketOut;
     BufferedReader keyBoard;
     StationClientWin myOutput;
+    String line; //read line from bufffer
     String station;
-    String line;
+    String time;
     String[] stations = new String[] {"A","B","C","D"};
     static int s = 0;
 
@@ -54,7 +55,6 @@ public class StationClient
 
             while (true)
             {
-                myOutput.printMe(this.station);
                 line = bufferSocketIn.readLine(); // reads a line from the server
                 if (line == null)  // connection is closed ?  exit
                 {
@@ -66,6 +66,7 @@ public class StationClient
                 {
                     break;
                 }
+
 
             }
         } catch (IOException e)
