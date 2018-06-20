@@ -16,14 +16,11 @@ public class StationClient
     StationClientWin myOutput;
     String line; //read line from bufffer
     String station;
-    String time;
-    String[] stations = new String[] {"A","B","C","D"};
-    static int s = 0;
+    String busLine;
+    String busTime;
 
-    public StationClient()
-    {
-        this.station = stations[s];
-    }
+
+
 
     public void doit()
     {
@@ -66,6 +63,10 @@ public class StationClient
                 {
                     break;
                 }
+                String[] MessageFromBus = line.split(" ");
+                busLine = MessageFromBus[0];
+                busTime = MessageFromBus[1];
+                myOutput.printOther("BusLine: " + busLine +" is coming in " + busTime + " minutes" );
 
 
             }
