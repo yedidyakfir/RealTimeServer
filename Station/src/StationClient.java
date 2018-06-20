@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.*;
 import java.net.Socket;
 
@@ -21,7 +22,6 @@ public class StationClient
     public StationClient()
     {
         this.station = stations[s];
-        s++;
     }
 
     public void doit()
@@ -45,12 +45,13 @@ public class StationClient
 //	   keyBoard = new BufferedReader(
 //	   new InputStreamReader(System.in));
 
-
+            station = JOptionPane.showInputDialog("serial num Station ");
             myOutput = new StationClientWin("Client  ", this);
 
             // notice about the connection
             myOutput.printMe("Connected to " + clientSocket.getInetAddress() +
                     ":" + clientSocket.getPort());
+
             while (true)
             {
                 myOutput.printMe(this.station);
@@ -65,6 +66,7 @@ public class StationClient
                 {
                     break;
                 }
+
             }
         } catch (IOException e)
         {
