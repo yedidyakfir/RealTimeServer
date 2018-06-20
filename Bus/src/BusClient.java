@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.io.*;
 import java.net.*;
 
@@ -12,13 +13,9 @@ public class BusClient
     PrintWriter bufferSocketOut;
     BufferedReader keyBoard;
     BusClientWin myOutput;
-    String line = "5";
+    String line;
     String[] stations;
 
-    public BusClient(String line)
-    {
-        this.line = line;
-    }
 
     public void doit()
     {
@@ -41,7 +38,7 @@ public class BusClient
 //	   keyBoard = new BufferedReader(
 //	   new InputStreamReader(System.in));
 
-
+            line = JOptionPane.showInputDialog("Line number Of Bus");
             myOutput = new BusClientWin("Client  ", this);
 
             // notice about the connection
@@ -102,7 +99,7 @@ public class BusClient
 
     public static void main(String[] args)
     {
-        BusClient client = new BusClient("5");
+        BusClient client = new BusClient();
         client.doit();
     }
 }
