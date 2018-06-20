@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996521d3-22fb-47ec-a16a-689bd5151283" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Center/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Center/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" afterPath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" />
-      <change beforePath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" />
-      <change beforePath="$PROJECT_DIR$/src/StationClient.java" afterPath="$PROJECT_DIR$/src/StationClient.java" />
+      <change beforePath="$PROJECT_DIR$/../Center/src/Other/MessageManager.java" afterPath="$PROJECT_DIR$/../Center/src/Other/MessageManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />

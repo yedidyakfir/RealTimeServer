@@ -13,6 +13,8 @@ public class MessageManager
     public MessageManager()
     {
         StationInLine.put(5,new String[] {"A","B","C"});
+        StationInLine.put(6,new String[] {"D","E","F"});
+        StationInLine.put(7,new String[] {"G","H","I"});
     }
 
     public void AddStation(String station, Event64 ev)
