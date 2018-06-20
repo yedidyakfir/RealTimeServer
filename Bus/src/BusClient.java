@@ -65,7 +65,7 @@ public class BusClient
                 for (String station : stations) //Bus Runs Through stations
                 {
                     Thread.sleep(5000); //simulates a driving bus
-                    bufferSocketOut.println(" " + line + " " + station );
+                    bufferSocketOut.println(station);
                     myOutput.printMe("Got to station " + station);
                 }
             }
