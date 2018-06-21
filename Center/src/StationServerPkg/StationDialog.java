@@ -27,7 +27,8 @@ public class StationDialog extends Thread
             // Init streams to read/write text in this socket
             bufferSocketIn = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             bufferSocketOut = new PrintWriter(new BufferedWriter(new OutputStreamWriter(clientSocket.getOutputStream())), true);
-        } catch (IOException e)
+        }
+        catch (IOException e)
         {
             try
             {
@@ -67,16 +68,15 @@ public class StationDialog extends Thread
                     bufferSocketOut.println(line); //sends the bus line number to client
                 }
             }
-        } catch (IOException e)
-        {
-        } finally
+        }
+        catch (IOException e) {}
+        finally
         {
             try
             {
                 client.close();
-            } catch (IOException e2)
-            {
             }
+            catch (IOException e2) {}
         }
 
         myOutput.printMe("end of  dialog ");
@@ -89,8 +89,7 @@ public class StationDialog extends Thread
         try
         {
             client.close();
-        } catch (IOException e2)
-        {
         }
+        catch (IOException e2) {}
     }
 }
