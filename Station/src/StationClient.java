@@ -43,6 +43,7 @@ public class StationClient
 //	   keyBoard = new BufferedReader(
 //	   new InputStreamReader(System.in));
 
+
             station = JOptionPane.showInputDialog("serial num Station ");
             myOutput = new StationClientWin("Client  ", this);
 
