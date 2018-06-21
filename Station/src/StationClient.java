@@ -50,6 +50,9 @@ public class StationClient
             myOutput.printMe("Connected to " + clientSocket.getInetAddress() +
                     ":" + clientSocket.getPort());
 
+            //sends station string
+            bufferSocketOut.println(station);
+
             while (true)
             {
                 line = bufferSocketIn.readLine(); // reads a line from the server
@@ -63,11 +66,6 @@ public class StationClient
                 {
                     break;
                 }
-                String[] MessageFromBus = line.split(" ");
-                busLine = MessageFromBus[0];
-                busTime = MessageFromBus[1];
-                myOutput.printOther("BusLine: " + busLine +" is coming in " + busTime + " minutes" );
-
 
             }
         } catch (IOException e)

@@ -67,7 +67,7 @@ class BusDialog extends Thread // parallel dialogs on the same socket
                 if (station.equals("end"))
                     break;
                 myOutput.printOther(station);
-                this.manager.BusArrivedAt(lineNumber,station);
+                manager.BusArrivedAt(lineNumber,station);
             }
         } catch (IOException e) {}
         finally

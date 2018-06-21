@@ -52,18 +52,22 @@ public class StationDialog extends Thread
             System.out.println("StationDialog, station " + line);
             busArrivedEv = new Event64();
             messageManager.AddStation(line,this.busArrivedEv);
+            System.out.println("Adding Station");
             myOutput.printOther(line);
+
             while (true)
             {
                 if(busArrivedEv.arrivedEvent())
                 {
+
                     line = String.valueOf(busArrivedEv.waitEvent());
+                    System.out.println("StationDialog notice Station: " + line);
                     bufferSocketOut.println(line);
                     myOutput.printMe(line);
                     if("end".equals(line))
                         break;;
                 }
-                bufferSocketOut.println((String)this.busArrivedEv.waitEvent());
+                bufferSocketOut.println(this.busArrivedEv.waitEvent());
             }
         } catch (IOException e)
         {
