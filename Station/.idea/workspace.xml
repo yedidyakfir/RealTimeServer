@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="996521d3-22fb-47ec-a16a-689bd5151283" name="Default" comment="D">
-      <change beforePath="$PROJECT_DIR$/../Bus/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Bus/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Center/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Center/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../Center/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Center/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" afterPath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" />
-      <change beforePath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/StationClient.java" afterPath="$PROJECT_DIR$/src/StationClient.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +18,8 @@
       <file leaf-file-name="StationClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StationClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+            <state relative-caret-position="-280">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -502,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StationClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="47" column="65" lean-forward="false" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
+        <state relative-caret-position="-280">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

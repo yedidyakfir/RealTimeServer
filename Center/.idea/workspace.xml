@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a6c3003-0c71-48eb-988b-70d1ee1e5b0e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Bus/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Bus/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Bus/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" afterPath="$PROJECT_DIR$/src/StationServerPkg/StationDialog.java" />
-      <change beforePath="$PROJECT_DIR$/../Station/.idea/misc.xml" afterPath="$PROJECT_DIR$/../Station/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/../Station/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Station/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/../Station/out/production/Station/StationClient.class" afterPath="$PROJECT_DIR$/../Station/out/production/Station/StationClient.class" />
-      <change beforePath="$PROJECT_DIR$/../Station/src/StationClient.java" afterPath="$PROJECT_DIR$/../Station/src/StationClient.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
