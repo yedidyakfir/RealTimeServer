@@ -62,6 +62,7 @@ public class MessageManager
             return;
 
         stationsAlert.get(station).sendEvent(line);
+        System.out.println("Event to station: " + station  + " has been sent");
     }
 
 }

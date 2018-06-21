@@ -49,17 +49,17 @@ public class StationDialog extends Thread
         try
         {
             line = bufferSocketIn.readLine(); //Gets the station
-            System.out.println("StationDialog, station " + line);
+           // System.out.println("StationDialog, station " + line);
             busArrivedEv = new Event64();
             messageManager.AddStation(line,this.busArrivedEv);
-            System.out.println("Adding Station");
+            System.out.println("StationDialog, Added station " + line);
             myOutput.printOther(line);
 
             while (true)
             {
                 if(busArrivedEv.arrivedEvent())
                 {
-
+                    System.out.println("In arrived busArrivedEv.arrivedEvent()");
                     line = String.valueOf(busArrivedEv.waitEvent());
                     System.out.println("StationDialog notice Station: " + line);
                     bufferSocketOut.println(line);
