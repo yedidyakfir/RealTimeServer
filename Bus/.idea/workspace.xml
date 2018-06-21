@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e92f7eb0-e411-4715-ad86-5abe82f49526" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Center/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Center/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/../Center/out/production/Center/Other/MessageManager.class" afterPath="$PROJECT_DIR$/../Center/out/production/Center/Other/MessageManager.class" />
       <change beforePath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" afterPath="$PROJECT_DIR$/../Center/out/production/Center/StationServerPkg/StationDialog.class" />
-      <change beforePath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialog.java" afterPath="$PROJECT_DIR$/../Center/src/BusServerPkg/BusDialog.java" />
       <change beforePath="$PROJECT_DIR$/../Center/src/Other/MessageManager.java" afterPath="$PROJECT_DIR$/../Center/src/Other/MessageManager.java" />
       <change beforePath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" afterPath="$PROJECT_DIR$/../Center/src/StationServerPkg/StationDialog.java" />
       <change beforePath="$PROJECT_DIR$/../Station/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Station/.idea/workspace.xml" />
@@ -24,7 +22,7 @@
       <file leaf-file-name="BusClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/BusClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="308">
               <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -270,7 +268,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34046054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34046054" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32943678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -383,7 +381,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/BusClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="308">
           <caret line="50" column="24" lean-forward="true" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />

@@ -7,9 +7,9 @@ import java.util.Random;
 
 public class MessageManager
 {
-    private  Map<String,Event64> stationsAlert = new HashMap<>();
+     Map<String,Event64> stationsAlert = new HashMap<String, Event64>();
     private Map<Integer,String[]> StationInLine = new HashMap<>(); //what station in the line x
-    private Random random = new Random();
+
 
 
     public MessageManager()
@@ -22,6 +22,7 @@ public class MessageManager
     public void AddStation(String station, Event64 ev)
     {
         stationsAlert.put(station,ev);
+        System.out.println("Messagemanager, Added station " + station);
     }
 
     public String BusStartDrive(int lineNumber)
@@ -62,7 +63,7 @@ public class MessageManager
             return;
 
         stationsAlert.get(station).sendEvent(line);
-        System.out.println("Event to station: " + station  + " has been sent");
+        System.out.println("Event to station: " + station  + " has been sent" );
     }
 
 }
