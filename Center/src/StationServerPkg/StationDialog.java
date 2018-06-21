@@ -39,7 +39,8 @@ public class StationDialog extends Thread
             System.err.println("server:Exception when opening sockets: " + e);
             return;
         }
-        myOutput = new StationDialogWin("Dialog Win for: " + client.toString(), this);
+
+        //myOutput = new StationDialogWin("Dialog Win for: " + client.toString(), this);
         start();
     }
 
@@ -50,6 +51,7 @@ public class StationDialog extends Thread
         try
         {
             line = bufferSocketIn.readLine(); //Gets the station
+            myOutput = new StationDialogWin("Dialog Win for station: "  + line, this);
            // System.out.println("StationDialog, station " + line);
             //busArrivedEv = new Event64();
             messageManager.AddStation(line,this.busArrivedEv);
