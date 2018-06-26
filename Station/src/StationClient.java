@@ -44,8 +44,8 @@ public class StationClient
 //	   new InputStreamReader(System.in));
 
 
-            station = JOptionPane.showInputDialog("serial num Station ");
-            myOutput = new StationClientWin(" Station Client: " +station, this);
+            station = JOptionPane.showInputDialog("Name of Station: ");
+            myOutput = new StationClientWin(" Station Client: " + station, this);
 
             // notice about the connection
             myOutput.printMe("Connected to " + clientSocket.getInetAddress() +

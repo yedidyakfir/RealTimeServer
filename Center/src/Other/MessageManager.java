@@ -43,26 +43,10 @@ public class MessageManager
 
     public void BusArrivedAt(int line,String station)
     {
-//        String[] path;
-//        path = StationInLine.get(line); //get the bus stations
-//
-//        int i=0;
-//        while(i < path.length && path[i] != station )
-//        {
-//            i++;
-//            System.out.println("MassageManager arrivedStation: " + path[i]);
-//        }
-//
-//        if(i == path.length) //end route of bus
-//            stationsAlert.get(path[i]).sendEvent("end");
-//        else
-//            for(int k=i; k<path.length; k++) {
-//                stationsAlert.get(path[k]).sendEvent(line + " " + k * 2); //notice stationd
-//            }
         if(!stationsAlert.containsKey(station))
             return;
 
-        stationsAlert.get(station).sendEvent(line);
+        stationsAlert.get(station).sendEvent(line + "Event to station: " + station  + " has been sent");
         System.out.println("Event to station: " + station  + " has been sent" );
     }
 

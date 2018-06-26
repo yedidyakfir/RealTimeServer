@@ -59,16 +59,15 @@ public class StationDialog extends Thread
 
             while (true)
             {
-                if(busArrivedEv.arrivedEvent()) {
+                    line = (String)busArrivedEv.waitEvent();
                     System.out.println("In arrived busArrivedEv.arrivedEvent()");
-                    line = String.valueOf((int) busArrivedEv.waitEvent());
                     System.out.println("StationDialog notice Station: " + line);
                     bufferSocketOut.println(line);
                     myOutput.printMe(line);
                     if ("end".equals(line))
                         break;
                     bufferSocketOut.println(line); //sends the bus line number to client
-                }
+
             }
         }
         catch (IOException e) {}

@@ -38,7 +38,7 @@ public class BusClient
 //	   keyBoard = new BufferedReader(
 //	   new InputStreamReader(System.in));
 
-            line = JOptionPane.showInputDialog("Line number Of Bus");
+            line = JOptionPane.showInputDialog("Bus line number: ");
             myOutput = new BusClientWin("Client  ", this);
 
             // notice about the connection
