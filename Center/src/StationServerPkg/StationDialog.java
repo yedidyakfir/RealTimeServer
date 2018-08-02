@@ -50,6 +50,7 @@ public class StationDialog extends Thread
         boolean stop=false;
         try
         {
+            //new
             line = bufferSocketIn.readLine(); //Gets the station
             myOutput = new StationDialogWin("Server station: "  + line, this);
            // System.out.println("StationDialog, station " + line);
