@@ -51,7 +51,7 @@ public class StationDialog extends Thread
         try
         {
             line = bufferSocketIn.readLine(); //Gets the station
-            myOutput = new StationDialogWin("Dialog Win for station: "  + line, this);
+            myOutput = new StationDialogWin("Server station: "  + line, this);
            // System.out.println("StationDialog, station " + line);
             //busArrivedEv = new Event64();
             messageManager.AddStation(line,this.busArrivedEv);
