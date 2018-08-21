@@ -62,7 +62,8 @@ public class StationClient
                     myOutput.printMe("Connection closed by the Server.");
                     break;
                 }
-                myOutput.printOther(line); // shows it on the screen
+                String[] temp = line.split(" "); //the first is line number and the second is time to arrive
+                myOutput.printOther("line: " + temp[0] + " ,arrives in: " + temp[1]); // shows it on the screen
                 if (line.equals("end"))
                 {
                     break;

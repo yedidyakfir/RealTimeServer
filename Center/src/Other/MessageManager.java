@@ -1,6 +1,8 @@
 package Other;
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
@@ -43,11 +45,17 @@ public class MessageManager
 
     public void BusArrivedAt(int line,String station)
     {
-        if(!stationsAlert.containsKey(station))
-            return;
+//        if(!stationsAlert.containsKey(station))
+//            return;
 
-        stationsAlert.get(station).sendEvent(line + "Event to station: " + station  + " has been sent");
-        System.out.println("Event to station: " + station  + " has been sent" );
+        int index = Arrays.asList(StationInLine.get(line)).indexOf(station);//get the index of the first station
+        for(int i = index; i < StationInLine.get(line).length; i++){
+            String tempStation = StationInLine.get(line)[i];
+            if(stationsAlert.containsKey(tempStation)){
+                stationsAlert.get(tempStation).sendEvent(line + " " + String.valueOf(((i - index)*5)));
+                System.out.println("Event to station: " + tempStation  + " has been sent" );
+            }
+        }
     }
 
 }
